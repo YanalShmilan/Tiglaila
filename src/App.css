@@ -4,18 +4,13 @@
   background-color: #00a8ff;
   border-style: dotted;
   width: fit-content;
-  margin-left: 35%;
-  margin-right: 35%;
 }
 .main-menu {
   text-align: center;
-
   border: #282c34;
   background-color: #00a8ff;
   border-style: dotted;
   width: fit-content;
-  margin-left: 40%;
-  margin-right: 35%;
   padding: 5px;
 }
 .App-logo {
