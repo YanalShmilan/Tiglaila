@@ -1,7 +1,23 @@
 .App {
   text-align: center;
+  border: #282c34;
+  background-color: #00a8ff;
+  border-style: dotted;
+  width: fit-content;
+  margin-left: 35%;
+  margin-right: 35%;
 }
+.main-menu {
+  text-align: center;
 
+  border: #282c34;
+  background-color: #00a8ff;
+  border-style: dotted;
+  width: fit-content;
+  margin-left: 40%;
+  margin-right: 35%;
+  padding: 5px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +51,121 @@
   to {
     transform: rotate(360deg);
   }
+}
+.grid-container {
+  margin-left: 35%;
+  margin-right: 35%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+.grid-container-knife {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  cursor: url('https://i.ibb.co/k1gnGC0/heart.png'), auto;
+
+  padding: 10px;
+}
+.grid-container-hammer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  cursor: url('https://i.ibb.co/FXfqdyd/hammer.png'), auto;
+
+  padding: 10px;
+}
+.grid-container-gun {
+  cursor: url('https://i.ibb.co/zXQK1Bs/gun.png'), auto;
+
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+.grid-item {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  /* cursor: url('https://i.ibb.co/k1gnGC0/heart.png'), auto; */
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  margin: 1px;
+  text-align: center;
+}
+.grid-item-love {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  cursor: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/heart.png'),
+    auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  margin: 1px;
+  text-align: center;
+}
+.grid-item:active {
+  background: url('https://i.ibb.co/Wnxx9vj/heart.png');
+}
+
+.ins-img {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+.fade {
+  font-weight: bolder;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  color: white;
+  animation: fadeIn linear 7s;
+  -webkit-animation: fadeIn linear 7s;
+  -moz-animation: fadeIn linear 7s;
+  -o-animation: fadeIn linear 7s;
+  -ms-animation: fadeIn linear 7s;
+}
+.fadeRed {
+  font-weight: bolder;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  color: red;
+  animation: fadeIn linear 7s;
+  -webkit-animation: fadeIn linear 7s;
+  -moz-animation: fadeIn linear 7s;
+  -o-animation: fadeIn linear 7s;
+  -ms-animation: fadeIn linear 7s;
+}
+
+.button {
+  position: relative;
+  background-color: #4caf50;
+  border: none;
+  font-size: 28px;
+  color: #ffffff;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button:after {
+  content: '';
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
 }
